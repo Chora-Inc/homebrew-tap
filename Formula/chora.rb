@@ -5,21 +5,21 @@
 class Chora < Formula
   desc "Chora CLI — local agent runtime and management tool for the Chora platform"
   homepage "https://github.com/Chora-Inc/chora"
-  version "0.3.28"
+  version "0.3.31"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Chora-Inc/Chora-Release/releases/download/v0.3.28/chora-cli-0.3.28-darwin-amd64.tar.gz"
-      sha256 "509a922b60f31426e1340114580fda76a0107629d2ccb20678c08f2aeb190f93"
+      url "https://github.com/Chora-Inc/Chora-Release/releases/download/v0.3.31/chora-cli-0.3.31-darwin-amd64.tar.gz"
+      sha256 "352abde29589dc69bfe8a573230b949b637d99912acd215fccfb699818e807ba"
 
       define_method(:install) do
         bin.install "chora"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Chora-Inc/Chora-Release/releases/download/v0.3.28/chora-cli-0.3.28-darwin-arm64.tar.gz"
-      sha256 "1e28b10f890a07e0283c8e630cb7de514416e3f61092c760a1f423eaffddc1f3"
+      url "https://github.com/Chora-Inc/Chora-Release/releases/download/v0.3.31/chora-cli-0.3.31-darwin-arm64.tar.gz"
+      sha256 "348d1777ee03c2bace9d8a029d7fdff5a43e8edc6be9ede7949d82199f14a7a9"
 
       define_method(:install) do
         bin.install "chora"
@@ -29,15 +29,15 @@ class Chora < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Chora-Inc/Chora-Release/releases/download/v0.3.28/chora-cli-0.3.28-linux-amd64.tar.gz"
-      sha256 "340f376d420d2bfa274010305b22cbf69e90fb52f6ca20de8ed14c4abe48b60e"
+      url "https://github.com/Chora-Inc/Chora-Release/releases/download/v0.3.31/chora-cli-0.3.31-linux-amd64.tar.gz"
+      sha256 "7f9f8f4e267c7185bd541414fe58669862ccd8a826bae59b35d605ff0e522c61"
       define_method(:install) do
         bin.install "chora"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Chora-Inc/Chora-Release/releases/download/v0.3.28/chora-cli-0.3.28-linux-arm64.tar.gz"
-      sha256 "af3b8f76fb5b53f5e0ce08ce6b92faf4885e443cbfb3229c8525eace3b70a179"
+      url "https://github.com/Chora-Inc/Chora-Release/releases/download/v0.3.31/chora-cli-0.3.31-linux-arm64.tar.gz"
+      sha256 "93a0762edf1ebb798bed9771d70ac9b6a87bbf26452a196f7bae2a83f172cc86"
       define_method(:install) do
         bin.install "chora"
       end
